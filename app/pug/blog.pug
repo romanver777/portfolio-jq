@@ -1,0 +1,20 @@
+//- blog
+extends template/template
+
+include parts/mixins
+
+block title
+    title Portfolio - Blog
+
+    -var pageId = 3;
+
+block content
+    include parts/preloader
+    .main
+        include parts/menu-pop
+        include parts/blog-header
+        include parts/blog-articles
+        include parts/footer
+block scripts
+    script(src="./js/libs.min.js")
+    script(src="./js/main.js")

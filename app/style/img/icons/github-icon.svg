@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="26" height="22" viewBox="0 0 26 22">
+  <defs>
+    <style>
+      .cls-1 {
+        opacity: 0.5;
+      }
+    </style>
+  </defs>
+  <image id="github" class="cls-1" width="26" height="22" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAWCAQAAAB0gUQ+AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfiCh8UMQQPjYdGAAABsUlEQVQ4y5XSvU+UQRAG8N/uvSB6IB8BAup5JMZESIyaaGwpKCzU2EtjLPyzbLCiMrGTgsrKaEJhobmEEAUumkPxlIAX1+I97l4uFN4Um51n55nZeWYCpCcu2LbhffjrVEvRLTfM2g7PyUhlVVRV3U0vw5dTKBUPTYFqKodfGWY6r9OepnfKpgwbQsuBr366LnZiZtQyDBSSRrcLXmbESE/ZASIO9GMHOaku/Tclqeeki33UCSrEFD0Q+qDdT6VowVhfPY1aiOb7osB8ptJxWmr2DDpv3KgMLT/s2Xdk3BVZO+5Spty+NqyERkGmQCiomiYsmwDlTKmNroZGmvUYL8JOl9DF0qpnoBTbM9oKO1gybNjSiQ46WNixleeJmmAXzOVnKo6giOVRzaies/Mueq0Hy39Vjz6BSUKyCTa7AvRgk6AWbTjEXBrDmqamtRPZO1gaM4cjG4F00yNsWQlHvUJ3xU+Dll3Gq/A2QLrjnpI96z6EP6d0NmDBonHJ6/DG8aqmKYuuKWnZ1fDboYTgjHMmzMgkNWthF8X9TkOuqpg26qxMhuRQy3fffPYx7B9H/gNKFIszulNIMAAAAABJRU5ErkJggg=="/>
+</svg>

@@ -1,0 +1,26 @@
+//- footer
+.footer-info
+    .footer-nav
+        .footer-nav__item
+            .footer-nav__desc Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool.
+        .footer-nav__item
+            .f-nav__list
+                .f-nav__item
+                    a(href='/works.html').f-nav__link Мои работы
+                .f-nav__item
+                    a(href='/about.html').f-nav__link Обо мне
+                .f-nav__item
+                    a(href='/blog.html').f-nav__link Блог
+                .f-nav__item
+                    a(href='/index.html?auth').f-nav__link Авторизация
+            +social-links({ soc_class: 'soc__footer',
+                             vk_class: 'soc__footer-img',
+                             gh_class: 'soc__footer-img',
+                             in_class: 'soc__footer-img' })
+        .footer-nav__item
+            .footer-nav-remark
+                .footer-remark__desc Всегда пишите код так, будто сопровождать его будет склонный к насилию психопат, который знает, где вы живете.
+                .footer-remark__name - Martin Golding
+    .footer.footer-common
+        .footer__item &copy; Владимир Астахов
+        .footer__item Создано с любовью в LoftSchool

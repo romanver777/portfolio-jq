@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="22" viewBox="0 0 24 22">
+  <defs>
+    <style>
+      .cls-1 {
+        opacity: 0.5;
+      }
+    </style>
+  </defs>
+  <image id="in_hover" class="cls-1" width="24" height="22" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAWCAQAAABwdJQDAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfiCh8ULwmlfcQkAAAA5ElEQVQ4y+2SMUsDQRCFv9ksIhjD3RU2MZBgkyqdYBssLAJpTJkqfzBFQqogWAQOhZQpAgqKNiJosBBCZFJ4rFcce/sDnOrN4307M7CiMX2a/LBiKltKy3BNC8HS4bI8DoZTpxthwLvTb2HAmE8AnpiHAICKRnoUGEZKnzsgwfAh3xmgA3d2Kink+lseuaKNAeCVG3kAS5UoCxwC5PoTutTcqDpDncjSeLa5yMV/1+9p4gME2PDMzjkVzq334hn3onrMiDhzznwT1nInCvLFwnnelV6c+vsD1gdsCxQ+oLD+gZDaA1x1LxudCp9yAAAAAElFTkSuQmCC"/>
+</svg>

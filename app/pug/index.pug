@@ -1,0 +1,13 @@
+extends template/template-index
+
+include parts/mixins
+
+block title
+    title Portfolio - Welcome
+block content
+    include parts/preloader.pug
+    include parts/canvas.pug
+    include parts/welcome-box.pug
+block scripts
+    script(src="./js/libs.min.js")
+    script(src="./js/main.js")

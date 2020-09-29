@@ -1,0 +1,54 @@
+//- about-about
+.about
+    .bg-arrow-down
+        .bg-arrow-down__left
+            +svg-tri-left(class="bg-arrow-down__tri_about-left")
+        .bg-arrow-down__right
+            +svg-tri-right(class="bg-arrow-down__tri_about-right")
+    .about__desc
+        .about__header
+            .about__title Обо мне
+        .about__content
+            .about__img-wr
+                img(src='../style/img/content/man-about.jpg').about__img
+            .about__title.about__title_fz Кто я
+            .about__info
+                p
+                    | Я веб разработчик из Новосибирска. Мне 27 лет.
+                    br
+                    | Я занимаюсь разработкой современных сайтов и приложений. Мне нравится делать интересные и современные проекты.
+                p
+                    | Этот сайт я сделал в рамках обучения в школе онлайн образования LoftSchool. Чуть позже я освежу в нем свой контент. А пока посмотрите,
+                    | как тут все класно и красиво.
+    .about__skills
+                .about__title.about__title_fz Чем я могу быть Вам полезен
+                .about__info.about__info_pad Больше всего меня привлекет Frontend разработка, но я также знаком и могу решать несложные задачи на Backend. Но давайте по порядку.
+                .skill
+                    .skill__title Frontend
+                    ul.skill__list
+                        li.skill__item
+                            +svg('HTML5')
+                        li.skill__item
+                            +svg('CSS3')
+                        li.skill__item
+                            +svg2row('JavaScript', '& JQuery')
+                .skill
+                    .skill__title Backend
+                    ul.skill__list
+                        li.skill__item
+                            +svg('PHP')
+                        li.skill__item
+                            +svg('mySQL')
+                        li.skill__item
+                            +svg2row('Node.js', '& npm')
+                        li.skill__item
+                            +svg('Mongo.db')
+                .skill
+                    .skill__title WorkFlow
+                    ul.skill__list
+                        li.skill__item
+                            +svg('Git')
+                        li.skill__item
+                            +svg('Gulp')
+                        li.skill__item
+                            +svg('Bower')

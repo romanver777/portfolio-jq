@@ -1,0 +1,66 @@
+
+.container-index
+    .auth-wrap
+        .auth-btn
+            .auth__link Авторизоваться
+    .wr-flip.jump
+        #flipbox
+            .front
+                .well
+                    +hero-box
+                    +social-links
+                    .butt
+                        .butt__item
+                            a(href="works.html").butt__link Мои работы
+                        .butt__item
+                            a(href="about.html").butt__link Обо мне
+                        .butt__item
+                            a(href="blog.html").butt__link Блог
+            .back
+                .well.well-auth
+                    h1.login__title Авторизуйтесь
+                    form().form-auth
+                        .form__item
+                            .form__inp-label
+                                svg(version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="14.137px" height="15.422px" viewBox="0 0 14.137 15.422" enable-background="new 0 0 14.137 15.422" xml:space="preserve").login-icon
+                                    g
+                                        path(fill="#C4CBCD" d="M11.456 15.422H2.681C1.084 15.422 0 14.448 0 12.821c0-2.269 0.532-5.753 3.474-5.753c0.312 0 1.627 1.396 3.595 1.396s3.283-1.396 3.595-1.396c2.941 0 3.474 3.484 3.474 5.753C14.137 14.448 13.053 15.422 11.456 15.422zM7.068 7.711c-2.129 0-3.855-1.727-3.855-3.855S4.939 0 7.068 0 s3.855 1.727 3.855 3.855S9.197 7.711 7.068 7.711z")
+                            input(type='text' placeholder='Логин' maxlength='10')#name.form__inp.form__name
+                        .form__item
+                            .form__inp-label
+                                svg(version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16.897px" height="15.984px" viewBox="0 0 16.897 15.984" enable-background="new 0 0 16.897 15.984" xml:space="preserve")
+                                    g
+                                        path(fill="#C4CBCD" d="M15.743 12.078c-0.261 0-1.074-0.943-1.285-1.154l-0.964 0.964l2.209 2.209c0.181 0.181 0.281 0.432 0.281 0.683c0 0.563-0.643 1.205-1.205 1.205c-0.251 0-0.502-0.101-0.683-0.281L7.359 8.966c-1.054 0.783-2.339 1.315-3.664 1.315C1.506 10.281 0 8.765 0 6.586C0 3.293 3.293 0 6.586 0c2.18 0 3.695 1.506 3.695 3.695c0 1.325-0.532 2.61-1.315 3.665l3.564 3.564l0.964-0.964c-0.211-0.211-1.154-1.024-1.154-1.285c0-0.231 0.924-1.155 1.154-1.155c0.08 0 0.171 0.041 0.23 0.101c0.372 0.372 3.173 3.012 3.173 3.303C16.897 11.154 15.974 12.078 15.743 12.078zM6.426 1.928c-1.064 0-1.928 0.863-1.928 1.928c0 0.291 0.07 0.572 0.19 0.833C4.428 4.568 4.146 4.498 3.855 4.498c-1.064 0-1.928 0.863-1.928 1.928s0.863 1.928 1.928 1.928S5.783 7.49 5.783 6.426c0-0.291-0.07-0.572-0.19-0.833c0.261 0.121 0.542 0.191 0.833 0.191c1.064 0 1.928-0.863 1.928-1.928S7.49 1.928 6.426 1.928z")
+                            input(type='password' name='pass' placeholder='Пароль' maxlength='10')#pass.form__inp.form__pass
+                        .checkbox
+                            label.checkbox__label
+                                input(type='checkbox').checkbox__input
+                                .checkbox__cust
+                                    svg(version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="18.164px" height="13.922px" viewBox="0 0 18.164 13.922" enable-background="new 0 0 18.164 13.922" xml:space="preserve").checkbox__cust-img
+                                        g
+                                            path(fill="#ffffff" d="M17.836 3.516L9.352 12l-1.594 1.594c-0.211 0.211-0.504 0.328-0.797 0.328s-0.586-0.117-0.797-0.328L4.57 12L0.328 7.758C0.117 7.547 0 7.254 0 6.961s0.117-0.586 0.328-0.797L1.922 4.57c0.211-0.211 0.504-0.328 0.797-0.328S3.305 4.359 3.516 4.57l3.445 3.457l7.688-7.699C14.859 0.117 15.152 0 15.445 0s0.586 0.117 0.797 0.328l1.594 1.594c0.211 0.211 0.328 0.504 0.328 0.797S18.047 3.305 17.836 3.516z")
+                                .checkbox__desc Я человек
+                        h3.radio-btn__title Вы точно не робот?
+                        .radio-btn__wrap
+                            .radio-btn
+                                .radio-btn__item
+                                    label.radio-btn__label.radio-btn_yes
+                                        input(type='radio' name='checkbox').radio-btn__input.radio-btn__input_yes
+                                        .radio-btn__cust
+                                            .radio-btn__cust-circle
+                                        .radio-btn__desc Да
+                                .radio-btn__item
+                                    label.radio-btn__label
+                                        input(type='radio' name='checkbox').radio-btn__input
+                                        .radio-btn__cust
+                                            .radio-btn__cust-circle
+                                        .radio-btn__desc Не уверен
+                    .butt
+                        .butt__item.butt__item_eq
+                            a(href="").butt__link.butt__link_home На главную
+                        .butt__item.butt__item_eq
+                            a(href="").butt__link.butt__link_login Войти
+    .footer-wrap.jump
+        .footer
+            .footer__item &copy; Владимир Астахов
+            .footer__item Создано с любовью в LoftSchool

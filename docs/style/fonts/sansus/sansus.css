@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'Sansus Webissimo';
+    src: local('Sansus Webissimo'), local('SansusWebissimo'), url('sansuswebissimo.woff2') format('woff2'), url('sansuswebissimo.woff') format('woff'), url('sansuswebissimo.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Sansus Webissimo';
+    src: local('Sansus Webissimo Italic'), local('SansusWebissimo-Italic'), url('sansuswebissimoitalic.woff2') format('woff2'), url('sansuswebissimoitalic.woff') format('woff'), url('sansuswebissimoitalic.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+}

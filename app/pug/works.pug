@@ -1,0 +1,22 @@
+//- works
+extends template/template
+
+include parts/mixins
+
+block title
+    title Portfolio - My Works
+block map
+
+    -var  pageId = 1;
+
+block content
+    include parts/preloader
+    .main
+        include parts/menu-pop
+        include parts/common-header
+        include parts/work-slide
+        // comments and contact form + footer
+        include parts/work-about
+block scripts
+    script(src="./js/libs.min.js")
+    script(src="./js/main.js")

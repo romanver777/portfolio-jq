@@ -1,0 +1,519 @@
+// index
+html{
+  font-size: 16px;
+
+  @media (max-width: 1199px){
+    font-size: 14px;
+  }
+}
+body{
+  margin: 0;
+  padding: 0;
+  font-family: $f-robotomedium;
+  font-size: 16px;
+
+  @include phones{
+    font-size: 14px;
+  }
+}
+.body_overflow-hidden{
+  overflow: hidden;
+}
+.alertWindow-wr{
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background-color: $bg-menu-pop;
+  z-index: 5;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: top 0.75s cubic-bezier(0.68, 0.04, 0.14, 0.96);
+}
+.alertWindow{
+  padding: 50px 15px;
+  color: #fff;
+  background-color: rgba(18, 38, 32, 1);
+  width: 300px;
+  text-align: center;
+  border: 2px solid $border-green;
+  border-radius: 30px;
+}
+.hide{
+  top: -110%;
+}
+.main{
+  overflow: hidden;
+  display: none;
+}
+.container-index{
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+.bg-forest-index {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2)),
+    url(../img/content/bg_forest_1800.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: calc(var(--vh, 1vh) * 100);
+
+  @media (max-width: 1200px) {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2)),
+    url(../img/content/bg_forest_1200.jpg);
+  }
+  @media (max-width: 768px) {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2)),
+    url(../img/content/bg_forest_768.jpg);
+  }
+  @media (max-width: 320px) {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2)),
+    url(../img/content/bg_forest_320.jpg);
+  }
+
+  @media (-webkit-min-device-pixel-ratio: 1.5) {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2)),
+      url(../img/content/bg_forest_1800_2x.jpg);
+  }
+  @media (max-width: 1200px) and (-webkit-min-device-pixel-ratio: 1.5) {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2)),
+      url(../img/content/bg_forest_1200_2x.jpg);
+  }
+  @media (max-width: 768px) and (-webkit-min-device-pixel-ratio: 1.5) {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2)),
+      url(../img/content/bg_forest_768_2x.jpg);
+  }
+  @media (max-width: 320px) and (-webkit-min-device-pixel-ratio: 1.5) {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2)),
+      url(../img/content/bg_forest_320_2x.jpg);
+  }
+}
+.bg-size-cover{
+  background-size: cover;
+}
+.auth-wrap{
+  position: absolute;
+  top: 4%;
+  right: 100px;
+
+  @include desktop{
+    right: 20px;
+  }
+  @include phones{
+    width: 147px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+.auth-btn{
+  position: relative;
+  width: 180px;
+  height: 45px;
+  display: flex;
+
+  @include phones {
+    position: relative;
+    width: 100%;
+    height: 40px;
+  }
+}
+.auth__link {
+  box-sizing: border-box;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  flex-grow: 1;
+  color: #fff;
+  border: 1.3px solid $border-green;
+  border-radius: 28px;
+  text-decoration: none;
+  @include linkState(#fff, none);
+
+  @media( pointer: fine) {
+    &:hover {
+      text-decoration: none;
+      background-color: $green;
+      border: none;
+      cursor: pointer;
+      transition: 0.2s;
+    }
+  }
+}
+// flipbox start
+.wr-flip{
+  position: absolute;
+  perspective: 1000px;
+}
+.jump{
+  animation-name: slideDown;
+  animation-duration: 0.5s;
+  animation-timing-function: ease;
+}
+@keyframes slideDown {
+  0% {
+    transform: translateY(-30%);
+  }
+  30%{
+    transform: translateY(8%);
+  }
+  55%{
+    transform: translateY(-4%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+.wr-flip, .front, .back{
+  width: 380px;
+  height: 411.8px;
+
+  @include phones{
+    width: 300px;
+  }
+}
+#flipbox {
+  position: relative;
+  transition: 0.5s;
+  transform-style: preserve-3d;
+}
+.flipped{
+  transform: rotateY(180deg);
+}
+.front, .back{
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.front{
+  backface-visibility: hidden;
+  z-index: 1;
+  transform: rotateY(0deg);
+}
+.back{
+  backface-visibility: hidden;
+  transform: rotateY(180deg);
+}
+// flipbox end
+
+// wellcome
+.well{
+  width: 100%;
+  position: relative;
+  z-index: 3;
+  color: #fff;
+  text-align: center;
+  background: rgba(18,38,32,0.6);
+  padding-top: 40px;
+  border-radius: 5px;
+  height: auto;
+}
+.img-container{
+  width: 141px;
+  height: 141px;
+  margin: 0 auto 23px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.well__img{
+  width: 100%;
+  height: 100%;
+}
+.well__title{
+  margin: 0 0 10px;
+  font-size: 1.75em;
+}
+.well__desc{
+  margin: 0 0 37px;
+  font-size: 1em;
+  font-family: $f-robotoregular;
+}
+.soc{
+  width: 138px;
+  margin: 0 auto 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.soc__item{
+}
+.soc__link{
+}
+.soc__vk{
+  width: 31px;
+  height: 17px;
+}
+.soc__gh{
+  width: 26px;
+  height: 22px;
+}
+.soc__in {
+  width: 24px;
+  height: 22px;
+}
+.soc__vk, .soc__gh, .soc__in{
+  opacity: 0.5;
+  fill: #fff;
+
+  @media( pointer: fine) {
+    &:hover {
+      transition: 0.2s;
+      fill: $green;
+      opacity: 1;
+    }
+  }
+}
+// down nav
+.butt{
+  height: 48px;
+  width: 100%;
+  display: flex;
+  border-radius: 0 0 3px 3px;
+  overflow: hidden;
+
+  @include phones{
+    height: 45px;
+  }
+}
+.butt__item{
+  display: flex;
+  border-right: 3px solid $border-green;
+  flex-grow: 1;
+  background-color: $medium-green;
+  &:last-child{
+    border-right: 0;
+  }
+}
+.butt__link{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  flex-grow: 1;
+  color: #fff;
+  text-decoration: none;
+  background-color: $medium-green;
+  font-family: $f-robotoregular;
+  font-size: 1em;
+
+  @media( pointer: fine) {
+    &:hover {
+      transition: 0.3s;
+      text-decoration: none;
+      background-color: $dark-green;
+      color: #fff;
+    }
+  }
+}
+.butt__item_eq{
+  flex-basis: 50%;
+}
+// login
+.well-auth{
+  position: absolute;
+  z-index: 0;
+  display: block;
+  padding-top: 23px;
+}
+.login__title{
+  font-family: $f-SansusWebissimo;
+  font-size: 2.1875em;
+  text-transform: uppercase;
+  margin: 0 0 31px;
+  &:after{
+    content: '';
+    display: block;
+    width: 89px;
+    border-bottom: 3px solid #fff;
+    padding-top: 26px;
+    text-align: center;
+    margin: 0 auto;
+  }
+}
+.form-auth{
+  text-align: center;
+  padding: 0 20px;
+  margin-bottom: 21px;
+}
+.form__item{
+  margin: 0 auto 20px;
+  position: relative;
+  height: 45px;
+  display: flex;
+}
+.form__inp-label{
+  width: 45px;
+  height: 100%;
+  background-color: $light-gray;
+  overflow: hidden;
+  border-radius: 50% 0 0 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.form__inp{
+  height: 100%;
+  color: $dark-gray;
+  font-family: $f-robotoregular;
+  font-size: 1em;
+  padding: 0 20px;
+  border-radius: 0 30px 30px 0;
+  border: 0;
+  outline: none;
+  display: flex;
+  flex-grow: 1;
+}
+// checkbox & radio
+.checkbox{
+  height: 21px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  display: inline-block;
+}
+.checkbox__label{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.checkbox__input, .radio-btn__input{
+  display: none;
+}
+.checkbox__cust{
+  width: 20px;
+  height: 20px;
+  border-radius: 2px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  margin-right: 11px;
+}
+.checkbox__cust-img{
+  visibility: hidden;
+}
+.checkbox__input:checked{
+  &+.checkbox__cust{
+    background-color: $green;
+
+    .checkbox__cust-img{
+      visibility: visible;
+    }
+  }
+}
+.checkbox__desc{
+  font-family: $f-robotoregular;
+  font-size: 1em;
+}
+.radio-btn__title{
+  margin: 0 0 14px;
+  font-family: $f-RobotoBold;
+  font-size: 1em;
+}
+.radio-btn__wrap{
+  display: inline-block;
+}
+.radio-btn{
+  height: 21px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.radio-btn__item{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 40px;
+  &:last-child{
+    margin-right: 0;
+  }
+}
+.radio-btn__label{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.radio-btn__cust{
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+}
+.radio-btn__cust-circle{
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: $green;
+  visibility: hidden;
+}
+.radio-btn__desc{
+  font-family: $f-robotoregular;
+  font-size: 1em;
+  color: #fff;
+}
+.radio-btn__input:checked{
+  &+.radio-btn__cust{
+    .radio-btn__cust-circle{
+      visibility: visible;
+    }
+  &+.radio-btn__desc{
+      color: $green;
+    }
+  }
+}
+// footer start
+.footer-wrap{
+  position: absolute;
+  bottom: 4%;
+}
+.footer {
+  color: #fff;
+  font-family: $f-RobotoLight;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation-delay: 0.2s;
+
+  @include phones {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+}
+.footer__item{
+  display: flex;
+
+  &:last-child{
+    margin-bottom: 0;
+    &:after{
+      content: '';
+    }
+  }
+  &:after{
+    content: '|';
+    margin: 0 4px;
+  }
+
+  @include phones{
+    margin-bottom: 5px;
+    &:after{
+      content: '';
+    }
+  }
+}
+// footer end

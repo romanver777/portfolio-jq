@@ -1,0 +1,27 @@
+//- about.jade
+extends template/template
+
+include parts/mixins
+
+block title
+    title Portfolio - About Me
+
+block map
+    <script src='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css' rel='stylesheet' />
+
+    -var pageId = 2;
+
+block content
+    include parts/preloader
+    .main
+        include parts/menu-pop
+        include parts/common-header
+        include parts/about-about
+        .map-wr
+            #map
+            include parts/about-map
+        include parts/footer
+block scripts
+    script(src="./js/libs.min.js")
+    script(src="./js/main.js")
